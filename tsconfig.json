@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"lib": [
+			"es2017",
+			"dom"
+		],
+		"noUnusedLocals": true,
+		"sourceMap": true,
+		"strict": false,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"jsx": "react-jsx"
+	},
+	"include": [
+		"**/src/*.ts",
+		"**/src/*.tsx"
+	]
+}
