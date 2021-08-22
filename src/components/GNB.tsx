@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Container, Box, makeStyles } from '@material-ui/core';
 import Logo from './Logo';
 
@@ -33,8 +33,7 @@ const GNB = (): JSX.Element => {
             <Container maxWidth='lg' className={classes.container}>
                 <Logo />
                 <Box className={classes.btns}>
-                    <FontAwesomeIcon icon={faGithub} color='#FFFFFF' size='lg'/>
-                    <FontAwesomeIcon icon={faLinkedin} color='#FFFFFF' size='lg'/>
+                    <FontAwesomeIcon icon={faBars} color='#FFFFFF' size='lg'/>
                 </Box>
             </Container>
         </Box>
