@@ -2,11 +2,12 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.tsx",
+    entry: "./src/Index.tsx",
     output: {
         filename: "index.js",
         path: path.join(__dirname, "/dist"),
-        publicPath: "/"
+        publicPath: "/",
+        assetModuleFilename: 'resources/[hash][ext][query]'
     },
     devtool: 'eval',
     resolve: {

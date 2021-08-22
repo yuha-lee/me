@@ -1,13 +1,5 @@
+import Page from './components/Page';
 import ReactDOM from 'react-dom';
-import { Typography, ThemeProvider } from '@material-ui/core';
-import defaultTheme from './defaultTheme';
+import Index from './components/Index';
 
-const App = (): JSX.Element => {
-    return (
-        <ThemeProvider theme={defaultTheme}>
-            <Typography variant='h1' color='secondary'>hello world</Typography>
-        </ThemeProvider>
-    )
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Page content={<Index />} />, document.getElementById('root'));

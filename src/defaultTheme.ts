@@ -136,13 +136,23 @@ const basicPalette = {
 	},
 	text: {
 		primary: '#000000DE',
-		secondary: '#0000008A',
+		secondary: '#c71585',
 		disabled: '#00000061',
 		hint: '#00000061'
 	}
 };
 
 export default createTheme({
+	overrides: {
+		MuiCssBaseline: {
+			'@global': {
+				body: {
+					height: '100vh',
+					background: 'url("bg.jpg") left top / cover no-repeat'
+				},
+			},
+		},
+	},
 	palette: basicPalette,
 	typography: basicTypography
 });;
