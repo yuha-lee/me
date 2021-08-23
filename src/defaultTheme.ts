@@ -136,7 +136,7 @@ const basicPalette = {
 	},
 	text: {
 		primary: '#000000DE',
-		secondary: '#c71585',
+		secondary: '#ff1493',
 		disabled: '#00000061',
 		hint: '#00000061'
 	}

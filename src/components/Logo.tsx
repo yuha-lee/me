@@ -5,6 +5,9 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.common.white,
         '&:hover': {
             cursor: 'pointer'
+        },
+        '& span': {
+            userSelect: 'none'
         }
     }
 }));
