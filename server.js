@@ -4,6 +4,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.static(path.join(__dirname, '/dist')));
+app.use('/resources', express.static(path.join(__dirname, '/resources')));
 app.listen(port);
 
 app.get('*', (req, res) => {

@@ -148,7 +148,7 @@ export default createTheme({
 			'@global': {
 				body: {
 					height: '100vh',
-					background: 'url("bg.jpg") no-repeat center fixed',
+					background: 'url("/resources/bg.jpg") no-repeat center fixed',
 					backgroundSize: 'cover'
 				},
 			},
