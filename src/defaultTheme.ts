@@ -147,7 +147,7 @@ export default createTheme({
 		MuiCssBaseline: {
 			'@global': {
 				body: {
-					height: '100vh',
+					minHeight: '100vh',
 					background: 'url("/resources/bg.jpg") no-repeat center fixed',
 					backgroundSize: 'cover'
 				},
