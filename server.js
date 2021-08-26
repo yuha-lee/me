@@ -8,5 +8,5 @@ app.use('/resources', express.static(path.join(__dirname, '/resources')));
 app.listen(port);
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/resources/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
