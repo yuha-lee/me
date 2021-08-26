@@ -45,7 +45,7 @@ const basicTypography = {
 	},
 	subtitle2: {
 		fontSize: 14,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Major Mono Display", monospace',
 		letterSpacing: '0px',
 		color: '#000000DE'
 	},
@@ -53,7 +53,7 @@ const basicTypography = {
 		fontSize: 16,
 		fontFamily: '"Montserrat", sans-serif',
 		letterSpacing: '0px',
-		color: '#000000DE'
+		color: '#dcdcdc'
 	},
 	body2: {
 		fontSize: 14,
@@ -148,7 +148,7 @@ export default createTheme({
 			'@global': {
 				body: {
 					minHeight: '100vh',
-					background: 'url("/resources/bg.jpg") no-repeat center fixed',
+					background: 'url("/bg.jpg") no-repeat center fixed',
 					backgroundSize: 'cover'
 				},
 			},
