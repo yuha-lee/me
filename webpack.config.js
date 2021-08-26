@@ -34,9 +34,9 @@ module.exports = {
         headers: { 'Access-Control-Allow-Origin': '*' },
         watchFiles: [ '../resources/**/*.*', '../src/**/*.*' ],
         static: [{
-            directory: path.join(__dirname, "/resources"),
+            directory: path.join(__dirname, ''),
             serveIndex: true,
             watch: true,
-        }],
+        }]
     }
 }
