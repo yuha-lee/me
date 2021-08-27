@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Container, Box, makeStyles } from '@material-ui/core';
 import Logo from './Logo';
+import BarMenu from './BarMenu';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -44,7 +45,7 @@ const GNB = (): JSX.Element => {
             <Container maxWidth='lg' className={classes.container}>
                 <Logo />
                 <Box className={classes.btns}>
-                    <FontAwesomeIcon icon={faBars} color='#FFFFFF' size='lg'/>
+                    <BarMenu />                    
                 </Box>
             </Container>
         </Box>

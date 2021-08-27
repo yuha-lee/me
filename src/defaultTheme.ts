@@ -2,7 +2,7 @@ import { createTheme } from '@material-ui/core';
 
 const basicTypography = {
 	h1: {
-		fontSize: 96,
+		fontSize: 90,
 		fontFamily: '"Montserrat", sans-serif',
 		letterSpacing: '-0.14px',
 		color: '#000000DE'
