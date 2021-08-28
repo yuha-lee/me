@@ -1,4 +1,5 @@
 import { Box, makeStyles, Typography } from '@material-ui/core';
+import AboutMe from './AboutMe';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -42,18 +43,23 @@ const SmallTypography = ({ text }: TypographyProps): JSX.Element => <Typography 
 const Index = (): JSX.Element => {
     const classes = useStyles();
     return (
-        <Box className={classes.root}>
+        <>
+            <Box className={classes.root}>
+                <Box>
+                    <BigTypography text={'Hi,'} />
+                    <BigTypography text={"I'm"} />
+                    <BigTypography text={'Yuha'} />
+                    <BigTypography text={'Lee.'} />
+                </Box>
+                <Box className={classes.intro}>
+                    <SmallTypography
+                        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur leo quis felis feugiat sollicitudin. In convallis viverra metus sed ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus aliquam molestie sapien a semper. Fusce sit amet aliquet nunc.'} />
+                </Box>
+            </Box>
             <Box>
-                <BigTypography text={'Hi,'} />
-                <BigTypography text={"I'm"} />
-                <BigTypography text={'Yuha'} />
-                <BigTypography text={'Lee.'} />
+                <AboutMe />
             </Box>
-            <Box className={classes.intro}>
-                <SmallTypography
-                    text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur leo quis felis feugiat sollicitudin. In convallis viverra metus sed ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus aliquam molestie sapien a semper. Fusce sit amet aliquet nunc.'} />
-            </Box>
-        </Box>
+        </>
     );
 };
 

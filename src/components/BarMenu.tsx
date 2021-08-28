@@ -6,10 +6,13 @@ import { useEffect, useRef, useState } from 'react';
 const useStyles = makeStyles(theme => ({
   list: {
     width: 150,
+    marginTop: 5,
     backgroundColor: 'rgba(0, 0, 0, 0.9)',
     color: theme.palette.common.white,
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
     '& ul': {
-      paddingBottom: 0
+      padding: 0
     },
     '& li.MuiListItem-root.MuiMenuItem-root:last-child': {
       border: 'none'
