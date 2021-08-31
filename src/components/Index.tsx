@@ -1,65 +1,50 @@
-import { Box, makeStyles, Typography } from '@material-ui/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Box, CardMedia, makeStyles, Typography } from '@material-ui/core';
 import AboutMe from './AboutMe';
+import RoundButton from './RoundButton';
 
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'flex-end',
-        userSelect: 'none',
-        gap: 15,
-        '& h1': {
-            color: theme.palette.common.white,
-            lineHeight: '71px',
-        },
-        '& span': {
-            color: theme.palette.grey[400],
-            lineHeight: '20px',
-            textAlign: 'left',
-            '@media (max-width: 618px)': {
-                textAlign: 'right'
-            },
-        },
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        gap: 25,
+        minHeight: 'calc(100vh - 200px)',
     },
-    intro: {
-        maxWidth: 400
+    photo: {
+        boxShadow: '3px 3px 4px 0 rgb(0 0 0 / 20%), -3px -3px 4px 0 rgb(255 255 255 / 50%)',
+        maxWidth: 200,
+        width: '40vw',
+        borderRadius: '50%',
+        background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.25))'
     },
-    '@global': {
-        '@keyframes show': {
-            '0%': {
-                transform: 'translateY(-100px)'
-            }
+    textWrapper: {
+        textAlign: 'center',
+        '& h4': {
+            lineHeight: 0.8
         }
+    },
+    buttons: {
+        display: 'flex',
+        gap: 10
     }
 }));
-
-type TypographyProps = {
-    text: string;
-};
-
-const BigTypography = ({ text }: TypographyProps): JSX.Element => <Typography variant='h1' display='block' align='right'>{text}</Typography>;
-const SmallTypography = ({ text }: TypographyProps): JSX.Element => <Typography variant='subtitle2' component='span' display='block' align='right'>{text}</Typography>;
 
 const Index = (): JSX.Element => {
     const classes = useStyles();
     return (
-        <>
-            <Box className={classes.root}>
-                <Box>
-                    <BigTypography text={'Hi,'} />
-                    <BigTypography text={"I'm"} />
-                    <BigTypography text={'Yuha'} />
-                    <BigTypography text={'Lee.'} />
-                </Box>
-                <Box className={classes.intro}>
-                    <SmallTypography
-                        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur leo quis felis feugiat sollicitudin. In convallis viverra metus sed ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus aliquam molestie sapien a semper. Fusce sit amet aliquet nunc.'} />
-                </Box>
+        <Box className={classes.root}>
+            <CardMedia component='img' src='/resources/me.png' className={classes.photo} />
+            <Box className={classes.textWrapper}>
+                <Typography variant='h4'>YUHA LEE</Typography>
+                <Typography variant='subtitle2' color='textSecondary'>FRONTEND DEVELOPER</Typography>
             </Box>
-            <Box>
-                <AboutMe />
+            <Box className={classes.buttons}>
+                <RoundButton icon={faGithub} />
+                <RoundButton icon={faLinkedin} />
             </Box>
-        </>
+        </Box>
     );
 };
 

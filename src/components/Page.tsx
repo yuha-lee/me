@@ -1,4 +1,4 @@
-import { ThemeProvider, CssBaseline, Container } from '@material-ui/core';
+import { ThemeProvider, CssBaseline, Container, Box } from '@material-ui/core';
 import { ReactNode } from 'react';
 import defaultTheme from '../defaultTheme';
 import GNB from './GNB';
@@ -14,11 +14,7 @@ const Page = ({ content }: PageProps): JSX.Element => {
         <ThemeProvider theme={defaultTheme}>
             <CssBaseline>
                 <GNB />
-                <Container maxWidth='lg' style={{paddingTop: 85, paddingBottom: 60}}>
-                    {content}
-                    <FloatingMenu />
-                </Container>
-                <Footer />
+                {content}
             </CssBaseline>
         </ThemeProvider>
     );

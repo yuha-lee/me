@@ -1,21 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Container, Box, makeStyles } from '@material-ui/core';
-import Logo from './Logo';
-import BarMenu from './BarMenu';
+import RoundButton from './RoundButton';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        position: 'fixed',
+        position: 'sticky',
         bottom: 'inherit',
         left: 0,
         top: 0,
         width: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        '& h4, & h6': {
-            color: theme.palette.common.white
-        },
-        padding: '5px 0',
+        padding: '15px 0',
         animation: '1s ease 0s 1 normal none running down'
     },
     '@global': {
@@ -28,12 +22,9 @@ const useStyles = makeStyles(theme => ({
     container: {
         display: 'flex',
         alignItems: 'center',
-        gap: 20
-    },
-    btns: {
-        marginLeft: 'auto',
-        '& svg': {
-            marginLeft: 20
+        gap: 20,
+        '& button': {
+            marginLeft: 'auto'
         }
     }
 }));
@@ -43,10 +34,7 @@ const GNB = (): JSX.Element => {
     return (
         <Box className={classes.root}>
             <Container maxWidth='lg' className={classes.container}>
-                <Logo />
-                <Box className={classes.btns}>
-                    <BarMenu />                    
-                </Box>
+                <RoundButton icon={faBars} />
             </Container>
         </Box>
     );

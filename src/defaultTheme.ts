@@ -3,79 +3,79 @@ import { createTheme } from '@material-ui/core';
 const basicTypography = {
 	h1: {
 		fontSize: 90,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '-0.14px',
 		color: '#000000DE'
 	},
 	h2: {
 		fontSize: 60,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '-0.03px',
 		color: '#000000DE'
 	},
 	h3: {
 		fontSize: 48,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	h4: {
-		fontSize: 34,
-		fontFamily: '"Montserrat", sans-serif',
+		fontSize: 32,
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0.01px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	h5: {
 		fontSize: 24,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0.77px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	h6: {
 		fontSize: 20,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	subtitle1: {
 		fontSize: 16,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	subtitle2: {
 		fontSize: 14,
-		fontFamily: '"Major Mono Display", monospace',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
-		color: '#000000DE'
+		color: '#6B92E5'
 	},
 	body1: {
 		fontSize: 16,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
 		color: '#dcdcdc'
 	},
 	body2: {
 		fontSize: 14,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
 		color: '#000000DE'
 	},
 	button: {
 		fontSize: 13,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0.01px',
 		color: '#000000DE'
 	},
 	caption: {
 		fontSize: 12,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0px',
 		color: '#000000DE'
 	},
 	overline: {
 		fontSize: 12,
-		fontFamily: '"Montserrat", sans-serif',
+		fontFamily: '"Comfortaa", sans-serif',
 		letterSpacing: '0.16px',
 		color: '#000000DE'
 	}
@@ -83,14 +83,14 @@ const basicTypography = {
 
 const basicPalette = {
 	primary: {
-		light: '#958AFB',
-		main: '#6F61F9',
-		dark: '#3A2FA3',
+		light: '#6B92E5',
+		main: '#6B92E5',
+		dark: '#7B81BE',
 		contrastText: '#FFFFFF'
 	},
 	secondary: {
 		light: '#FF4081',
-		main: '#F50057',
+		main: '#F88AB0',
 		dark: '#C51162',
 		contrastText: '#FFFFFF'
 	},
@@ -135,7 +135,7 @@ const basicPalette = {
 		'A700': '#303030'
 	},
 	text: {
-		primary: '#000000DE',
+		primary: '#6B92E5',
 		secondary: '#ff1493',
 		disabled: '#00000061',
 		hint: '#00000061'
@@ -148,8 +148,7 @@ export default createTheme({
 			'@global': {
 				body: {
 					minHeight: '100vh',
-					background: 'url("/resources/bg.jpg") no-repeat center fixed',
-					backgroundSize: 'cover'
+					backgroundColor: '#ebeff2'
 				},
 			},
 		},

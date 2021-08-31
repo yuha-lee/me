@@ -14,7 +14,14 @@ const useStyles = makeStyles(theme => ({
 const AboutMe = (): JSX.Element => {
     const classes = useStyles();
     const skills = [
-        { icon: faJs, name: 'javaScript', bar: 80 }
+        { icon: faJs, name: 'javaScript', bar: 80 },
+        { icon: faJs, name: 'TypeScript', bar: 80 },
+        { icon: faJs, name: 'CSS', bar: 80 },
+        { icon: faJs, name: 'HTML', bar: 80 },
+        { icon: faJs, name: 'React', bar: 80 },
+        { icon: faJs, name: 'Git', bar: 80 },
+        { icon: faJs, name: 'Java', bar: 80 },
+        { icon: faJs, name: 'Node.js', bar: 80 }
     ];
 
     return (
