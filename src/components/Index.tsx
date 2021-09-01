@@ -32,6 +32,9 @@ const useStyles = makeStyles(theme => ({
     buttons: {
         display: 'flex',
         gap: 15
+    },
+    dividerWrapper: {
+        marginBottom: 20
     }
 }));
 
@@ -53,7 +56,9 @@ const Index = (): JSX.Element => {
                 <RoundButton icon={faGithub} />
                 <RoundButton icon={faLinkedin} />
             </Box>
-            <Divider />
+            <Box className={classes.dividerWrapper}>
+                <Divider />
+            </Box>
         </Box>
     );
 };

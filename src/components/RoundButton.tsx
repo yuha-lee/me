@@ -8,14 +8,11 @@ const useStyles = makeStyles(theme => ({
         width: 40,
         height: 40,
         boxShadow: '3px 3px 4px 0 rgb(0 0 0 / 20%), -3px -3px 4px 0 rgb(255 255 255 / 50%)',
-        background: 'linear-gradient(-45deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.4))',
         minWidth: 'auto',
         '& span svg': {
           margin: 0
         },
-        '&:hover': {
-          background: 'linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.4))'
-        }
+        backgroundColor: '#ebeff2'
     }
 }));
 
